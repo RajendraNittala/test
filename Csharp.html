@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tutorials.net</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/tutorials.css" rel="stylesheet">
+    <link href="css/Syntaxhighlight.css" rel="stylesheet">
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Tutorials.net</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Csharp.html">C#</a></li>
+                        <li><a href="#">Css</a></li>
+                        <li><a href="#">Html</a></li>
+                        <li><a href="#">Sql</a></li>
+                    </ul>
+                </li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://www.facebook.com">Facebook</a></li>
+                        <li><a href="http://www.twitter.com">Twitter</a></li>
+                        <li><a href="https://plus.google.com">Google+</a></li>
+                        <li><a href="http://www.linkedin.com">LinkedIn</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+    <!-- End Intro Text -->
+    <div class="container-fluid padded">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <section>
+                    <div class="list-group tpad">
+                        <a href="#" class="list-group-item active">C# Introduction</a>
+                        <a href="#" class="list-group-item" onclick="loadTemplate('doc')">Speed Mode</a>
+                        <a href="#" class="list-group-item" onclick="loadTemplate('basic')">Eco Friendly</a>
+                        <a href="#" class="list-group-item" onclick="loadTemplate('basiccss')">Scenic Mode</a>
+                        <a href="#" class="list-group-item" onclick="loadTemplate('basicsql')">Safe Mode</a>
+                        <a href="#" class="list-group-item" onclick="loadTemplate('basicjson')">New Additions</a>
+                    </div>
+                    <hr>
+                </section>
+            </div>
+            <div class="col-sm-8 blog">
+                <section>
+                    <p>
+                        <div>
+                            <div id="rightpanel"></div>
+
+                        </div>
+                    </p>
+                    <hr>
+                </section>
+                <section>
+                    <h4>Speed Mode Boosted</h4>
+                    <hr>
+                    <p><div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><b>Syntax</b></div><pre class="shi_pre sh_c snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_usertype">Employee</span><span class="sh_normal"> </span>employee <span class="sh_symbol">=</span> <span class="sh_usertype">new</span><span class="sh_normal"> </span><span class="sh_function">Employee</span><span class="sh_symbol">();</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">Employee employee = new Employee();</pre></div></div></p>
+                    <p>
+                        From a high level, LINQ can be understood as a strongly typed query language, embedded directly into the grammar of C#. Using LINQ, you can build any number of expressions that have a look and feel similar to that of a database SQL query. However, a LINQ query can be applied to any number of data stores, including stores that have nothing to do with a literal relational database.
+                        <div class="snippet-container">
+                            <div class="sh_default snippet-wrap">
+                                <div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_c snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_usertype">using</span><span class="sh_normal"> </span>System<span class="sh_symbol">;</span></li><li>class AsciiChar</li><li><span class="sh_cbracket">{</span></li><li>    <span class="sh_keyword">static</span> <span class="sh_type">void</span> <span class="sh_function">Main</span><span class="sh_symbol">()</span></li><li>    <span class="sh_cbracket">{</span></li><li>        <span class="sh_type">int</span> i<span class="sh_symbol">;</span></li><li>        Console<span class="sh_symbol">.</span><span class="sh_function">WriteLine</span><span class="sh_symbol">(</span><span class="sh_string">"Enter any number:"</span><span class="sh_symbol">);</span></li><li>        i <span class="sh_symbol">=</span> <span class="sh_type">int</span><span class="sh_symbol">.</span><span class="sh_function">Parse</span><span class="sh_symbol">(</span>Console<span class="sh_symbol">.</span><span class="sh_function">ReadLine</span><span class="sh_symbol">());</span></li><li>        <span class="sh_type">char</span> c <span class="sh_symbol">=</span> Convert<span class="sh_symbol">.</span><span class="sh_function">ToChar</span><span class="sh_symbol">(</span>i<span class="sh_symbol">);</span></li><li>        Console<span class="sh_symbol">.</span><span class="sh_function">Write</span><span class="sh_symbol">(</span>c<span class="sh_symbol">);</span></li><li>        console<span class="sh_symbol">.</span><span class="sh_function">Read</span><span class="sh_symbol">();</span></li><li>    <span class="sh_cbracket">}</span></li><li><span class="sh_cbracket">}</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">
+using System;
+class AsciiChar
+{
+    static void Main()
+    {
+        int i;
+        Console.WriteLine("Enter any number:");
+        i = int.Parse(Console.ReadLine());
+        char c = Convert.ToChar(i);
+        Console.Write(c);
+        console.Read();
+    }
+}
+</pre>
+                            </div>
+                        </div>
+                    </p>
+                    <a class="btn btn-primary" href="#">Try it</a>
+                    <hr>
+                </section>
+                <section>
+                    <h1><a href="#">Safe Mode Reaches Public Beta</a></h1>
+                    <p class="lead"><a href="index.html">Infinite Skills</a></p>
+                    <hr>
+                    <p>
+                        <div class="snippet-container">
+                            <div class="sh_default snippet-wrap">
+                                <div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_c snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_comment">// Employee.Core.cs</span></li><li>partial class Employee</li><li><span class="sh_cbracket">{</span></li><li>   <span class="sh_comment">// Field data</span></li><li></li><li>   <span class="sh_comment">// Constructors</span></li><li><span class="sh_cbracket">}</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">// Employee.Core.cs
+partial class Employee
+{
+   // Field data
+   // Constructors
+}</pre>
+                            </div>
+                        </div>
+                    </p>
+                    <hr>
+                    <div class="snippet-container">
+                        <div class="sh_default snippet-wrap">
+                            <div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_c snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_usertype">using</span><span class="sh_normal"> </span>System<span class="sh_symbol">;</span></li><li>class IfDemo</li><li><span class="sh_cbracket">{</span></li><li>    <span class="sh_keyword">static</span> <span class="sh_type">void</span> <span class="sh_function">Main</span><span class="sh_symbol">()</span></li><li>    <span class="sh_cbracket">{</span></li><li>        <span class="sh_type">int</span> a<span class="sh_symbol">,</span> b<span class="sh_symbol">;</span></li><li>        Console<span class="sh_symbol">.</span><span class="sh_function">WriteLine</span><span class="sh_symbol">(</span><span class="sh_string">"Enter First Number"</span><span class="sh_symbol">);</span></li><li>        a <span class="sh_symbol">=</span> <span class="sh_type">int</span><span class="sh_symbol">.</span><span class="sh_function">Parse</span><span class="sh_symbol">(</span>Console<span class="sh_symbol">.</span><span class="sh_function">ReadLine</span><span class="sh_symbol">());</span></li><li>        Console<span class="sh_symbol">.</span><span class="sh_function">WriteLine</span><span class="sh_symbol">(</span><span class="sh_string">"Enter Second Number"</span><span class="sh_symbol">);</span></li><li>        b <span class="sh_symbol">=</span> <span class="sh_type">int</span><span class="sh_symbol">.</span><span class="sh_function">Parse</span><span class="sh_symbol">(</span>Console<span class="sh_symbol">.</span><span class="sh_function">ReadLine</span><span class="sh_symbol">());</span></li><li>        <span class="sh_keyword">if</span> <span class="sh_symbol">(</span>b <span class="sh_symbol">==</span> <span class="sh_number">0</span><span class="sh_symbol">)</span></li><li>        <span class="sh_cbracket">{</span></li><li>            Console<span class="sh_symbol">.</span><span class="sh_function">WriteLine</span><span class="sh_symbol">(</span><span class="sh_string">"please enter other than 0"</span><span class="sh_symbol">);</span></li><li>            b <span class="sh_symbol">=</span> <span class="sh_type">int</span><span class="sh_symbol">.</span><span class="sh_function">Parse</span><span class="sh_symbol">(</span>Console<span class="sh_symbol">.</span><span class="sh_function">ReadLine</span><span class="sh_symbol">());</span></li><li>        <span class="sh_cbracket">}</span></li><li>        <span class="sh_type">float</span> div <span class="sh_symbol">=</span> a <span class="sh_symbol">/</span> b<span class="sh_symbol">;</span></li><li>        Console<span class="sh_symbol">.</span><span class="sh_function">WriteLine</span><span class="sh_symbol">(</span><span class="sh_string">"Divison result is:"</span> <span class="sh_symbol">+</span> div<span class="sh_symbol">);</span></li><li>        Console<span class="sh_symbol">.</span><span class="sh_function">ReadLine</span><span class="sh_symbol">();</span></li><li>    <span class="sh_cbracket">}</span></li><li><span class="sh_cbracket">}</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">using System;
+class IfDemo
+{
+    static void Main()
+    {
+        int a, b;
+        Console.WriteLine("Enter First Number");
+        a = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter Second Number");
+        b = int.Parse(Console.ReadLine());
+        if (b == 0)
+        {
+            Console.WriteLine("please enter other than 0");
+            b = int.Parse(Console.ReadLine());
+        }
+        float div = a / b;
+        Console.WriteLine("Divison result is:" + div);
+        Console.ReadLine();
+    }
+}
+</pre>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>
+                        <div class="snippet-container">
+                            <div class="sh_default snippet-wrap">
+                                <div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_c snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">if</span> <span class="sh_symbol">(</span>condition<span class="sh_symbol">)</span></li><li><span class="sh_cbracket">{</span></li><li>    <span class="sh_comment">//statements</span></li><li><span class="sh_cbracket">}</span></li><li><span class="sh_keyword">else</span></li><li><span class="sh_cbracket">{</span></li><li>    <span class="sh_comment">//statements</span></li><li><span class="sh_cbracket">}</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">if (condition)
+{
+    //statements
+}
+else
+{
+    //statements
+}</pre>
+                            </div>
+                        </div>
+                    </p>
+                    <a class="btn btn-primary" href="#">Try it</a>
+                    <hr>
+                </section>
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2 sidebar">
+                <section>
+                    <h3 class="tpad">Advertisements</h3>
+                    <div class="list-group tpad">
+                        <img src="images/advertise.jpg" class="img-responsive">
+                    </div>
+                    <hr>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Content -->
+    <div class="marketing">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="img-responsive" src="images/app.png">
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="tpad">ALWAYS ON HAND</h3>
+                    <hr>
+                    <p>
+                        Download the App for your device now and try it for yourself. No matter how regularly you make a journey
+                        this App will completely change the way you travel.
+                    </p>
+                    <p><a class="btn btn-large btn-primary" href="#">Get it now!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Marketing Section -->
+    <div class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 tabbable">
+                    <!-- Tabs go here -->
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active"><a href="#android" data-toggle="tab">Android</a></li>
+                        <li><a href="#bb" data-toggle="tab">Blackberry</a></li>
+                        <li><a href="#ios" data-toggle="tab">iOS</a></li>
+                        <li><a href="#win" data-toggle="tab">Windows</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="android">
+                            <p>
+                                <img src="images/gplay.jpg" alt="google" class="pull-right">Android... Donec eget sem lacus.
+                                Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum
+                                lectus. Pellentesque eleifend feugiat tincidunt. <br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade in" id="bb">
+                            <p>
+                                <img src="images/bbstore.jpg" alt="google" class="pull-right">Blackberry... Donec eget sem lacus.
+                                Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum
+                                lectus. Pellentesque eleifend feugiat tincidunt.<br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade in" id="ios">
+                            <p>
+                                <img src="images/appstore.jpg" alt="google" class="pull-right">iOS... Donec eget sem lacus. Morbi
+                                vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum lectus.
+                                Pellentesque eleifend feugiat tincidunt.<br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade in" id="win">
+                            <p>
+                                <img src="images/winstore.jpg" alt="google" class="pull-right">Windows... Donec eget sem lacus.
+                                Morbi vitae viverra metus. Duis gravida sapien in hendrerit ultricies. Maecenas in vestibulum
+                                lectus. Pellentesque eleifend feugiat tincidunt.<br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-2">
+                    <!-- Quote go here -->
+                    <blockquote>
+                        <p>
+                            &ldquo;This App has completely revolutionized the way we travel, we will never have to wait around
+                            in the rain for transport, we can time our day perfectly. I don't know how I ever lived without
+                            it.&rdquo;
+                        </p>
+                        <small>James T. Kirk, <cite title="source title">Starship Enterprise</cite></small>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- info panel end -->
+    <div class="ftr">
+        <div class="container">
+            <div class="row">
+                <footer>
+                    <div class="pull-left ft_space">
+                        <address>
+                            <h3>Tutorials.net Inc.</h3>
+                            200 Trafalgar Road<br> Oakville, ON M6L 6Y9<br>
+                            <a href="mailto: first.last@Tutorials.net">hello@Tutorials.net</a><br>
+                            <abbr title="Phone">P:</abbr>906 123-4567
+                        </address>
+                    </div>
+                    <div class="pull-right ft_space">
+                        <img class="img-responsive" src="images/moveMe.png">
+                        <p>&copy; Tutorials.net Inc. 2013</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Syntaxhighlight.js"></script>
+</body>
+
+</html>
