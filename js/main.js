@@ -25,12 +25,12 @@ function loadTemplate(name)
 	    case 'basic':
 	        $('#rightpanel').html();
 			//document.getElementById('ta').value = '<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE foo SYSTEM "Foo.dtd"><a><b>bbb</b><c/><d><soapenv:Envelope xmlns:soapenv="http://xxx" xmlns:xsd="http://yyy" xmlns:xsi="http://zzz"></soapenv></d><e><![CDATA[ <z></z> ]]></e><f><g></g></f></a>';
-	        $('#rightpanel').empty().load('../html/basic.html');
+	        $('#rightpanel').empty().load('html/basic.html');
 			break;
 			
 	    case 'basicjson':
 	        $('#rightpanel').html();
-		    $('#rightpanel').empty().load('../html/basicjson.html');
+		    $('#rightpanel').empty().load('html/basicjson.html');
 			break;
 
 		case 'yahoojson':
